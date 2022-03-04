@@ -21,19 +21,11 @@ int main (int argc, char **argv)
 
     fclose (fptr);
 
-    for (char c : data)
-    {
-        data[counter] = char(int(data[counter]) - 31);
-        counter++;
-    }
-
-    data[0] = char(int(data[0]) + 31);
-
     fptr = fopen (argv[1], "wb");
 
     for (int j = 0; j < i - 1; j++)
     {
-        fputc (data[j], fptr);
+        fputc ((data[j] ^ 0x60), fptr);
     }
 
     fclose (fptr);
