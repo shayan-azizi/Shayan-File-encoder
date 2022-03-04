@@ -4,8 +4,7 @@ This program will encrypt your files
 
 ## How to use??
 - Download the project.
-- Open terminal and type `gcc hider.c; ./a.out`
-- Then type the file name. (file should be at same directory with c file)
+- Open terminal and type `g++ main.cpp; ./a.out filename` (your file should be in same directory with C++ file)
 - Your file is encrypted!
 
 ### Warning! always have copy from your file Warning!
