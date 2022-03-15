@@ -3,9 +3,11 @@ Simple file encoder written in c
 This program will encrypt your files
 
 ## How to use??
-- Download the project.
-- Open terminal and type `g++ main.cpp; ./a.out filename` (your file should be in same directory with C++ file)
-- Your file is encrypted!
-
-### Warning! always have copy from your file Warning!
+- If you are on unix-like OS and debian based distro, type this command on terminal: 
+```
+wget https://github.com/shayan-azizi/Shayan-File-encoder/raw/main/file-encoder.deb; sudo dpkg -i file-encoder.deb
+```
+- Then, type your password and wait for install
+- Now, you can use `file-encode <file-name>` to encode your file
+- If you want to decode the file, type that again!
 
