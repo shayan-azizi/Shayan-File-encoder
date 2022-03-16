@@ -12,7 +12,22 @@ int main (int argc, char **argv)
     int i = 0;
     FILE *fptr;
 
-    fptr = fopen (argv[1], "rb");
+
+    try
+    {
+        fptr = fopen (argv[1], "rb");
+        if (! fptr)
+        {
+            throw argv[1];
+        }
+    }
+    catch(char* fileName)
+    {
+        std :: cout << fileName << " is not valid file adress" << std :: endl;
+        return 1;
+
+    }
+
 
     while (!feof (fptr))
     {
