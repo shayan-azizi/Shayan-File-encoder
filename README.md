@@ -11,3 +11,5 @@ wget https://github.com/shayan-azizi/Shayan-File-encoder/raw/main/file-encoder.d
 - Now, you can use `file-encode <file-name>` to encode your file
 - If you want to decode the file, type that again!
 
+- And if you are on windows, you can download the file-encode.exe
+- Then open up your command prompt and type: `./file-encode.exe <file-name>`
